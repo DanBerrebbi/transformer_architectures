@@ -111,7 +111,8 @@ class Learning():
       logging.info('Epoch {}'.format(n_epoch))
       n_batch = 0
       score = Score()
-      for batch_pos, [batch_src, batch_tgt] in trainset:
+      #for batch_pos, [batch_src, batch_tgt] in trainset:
+      for batch_pos, [batch_src, batch_tgt, batch_sim, batch_pre] in trainset:
         n_batch += 1
         self.model.train()
         ###
