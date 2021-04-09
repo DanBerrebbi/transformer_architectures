@@ -4,7 +4,6 @@ import logging
 import numpy as np
 import torch
 import time
-assert 6==2
 
 from transformer.Model import save_checkpoint, prepare_source, prepare_target
 from Model_serie import save_checkpoint, prepare_source, prepare_target
